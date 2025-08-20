@@ -27,7 +27,6 @@ pygame.draw.ellipse(DISPLAYSURF, BLUE, (300, 250, 180, 80), 0)
 pygame.draw.rect(DISPLAYSURF, BLUE, (200, 150, 100, 50))
 
 pixObj = pygame.PixelArray(DISPLAYSURF)
-
 pixObj[480][380] = BLACK
 pixObj[482][382] = BLACK
 pixObj[484][384] = BLACK
