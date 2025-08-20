@@ -1,5 +1,8 @@
-import pygame, sys
+import pygame, sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
+
+from utils import crayola64 as cr
 from pygame.locals import *
 
 
@@ -18,7 +21,7 @@ BLUE = (  0,   0, 255)
 
 #draw on the surface object
 DISPLAYSURF.fill(WHITE)
-pygame.draw.polygon(DISPLAYSURF, GREEN, ((146,0), (291, 106), (236,277), (56, 277), (0, 106))) 
+pygame.draw.polygon(DISPLAYSURF, cr.ALMOND, ((146,0), (291, 106), (236,277), (56, 277), (0, 106))) 
 pygame.draw.line(DISPLAYSURF, RED, (60,60), (120,60), (4))
 pygame.draw.line(DISPLAYSURF, BLUE, (120, 60), (60, 120))
 pygame.draw.line(DISPLAYSURF, BLUE, (60, 120), (120, 120), 4)
