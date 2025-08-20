@@ -26,7 +26,7 @@ while True: #main game loop
     DISPLAYSURF.blit(textSurfaceObj, textRectObj)
     for event in pygame.event.get():
         if event.type == QUIT:
-            pygame.guit()
+            pygame.quit()
             sys.exit()
         
         if event.type == pygame.KEYDOWN:
